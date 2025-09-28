@@ -33,5 +33,3 @@ build/
 .vscode/
 
 
-#ignore access key
-.env
