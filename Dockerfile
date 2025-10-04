@@ -1,5 +1,5 @@
-# Stage 1: Build the project using Maven with Java 24
-FROM maven:3.9.3-eclipse-temurin-24 AS build
+# Stage 1: Build the project using Maven with Java 23
+FROM maven:3.9.3-eclipse-temurin-23 AS build
 
 # Set working directory
 WORKDIR /app
@@ -11,8 +11,8 @@ COPY src ./src
 # Build the project and skip tests
 RUN mvn clean package -DskipTests
 
-# Stage 2: Run the built jar with JDK 24
-FROM eclipse-temurin:24-jdk
+# Stage 2: Run the built jar with JDK 23
+FROM eclipse-temurin:23-jdk
 
 # Set working directory
 WORKDIR /app
