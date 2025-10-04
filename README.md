@@ -36,20 +36,37 @@ This is a Spring Boot-based personal portfolio showcasing my projects, skills, a
 ---
 
 ## 📂 Project Structure
-portfolio/
-│
-├─ src/main/java/ → Java source code
-│ ├─ in/sarvjeetkumar/portfolio/
-│ │ ├─ controller/ → Spring MVC controllers
-│ │ └─ config/ → Configuration classes (Web3Form API keys)
-│
-├─ src/main/resources/
-│ ├─ application.properties → App configuration
-│ └─ templates/ → Thymeleaf HTML templates
-│
-├─ .env → Environment variables (ignored in Git)
-├─ pom.xml → Maven dependencies
-└─ README.md → Project documentation
 
-
+portfolio/                          
+│
+├─ src/
+│   ├─ main/
+│   │   ├─ java/
+│   │   │   └─ in/sarvjeetkumar/portfolio/
+│   │   │       ├─ PortfolioApplication.java
+│   │   │       ├─ config/
+│   │   │       │   └─ Web3FormConfig.java
+│   │   │       ├─ controller/
+│   │   │       │   └─ ContactController.java
+│   │   │       └─ model/           
+│   │   │
+│   │   └─ resources/
+│   │       ├─ templates/           
+│   │       │   ├─ fragments/
+│   │       │   │   └─ contact.html
+│   │       │   └─ index.html
+│   │       ├─ static/               
+│   │       │   ├─ css/
+│   │       │   ├─ js/
+│   │       │   │   └─ copy-tracker.js  
+│   │       │   └─ images/
+│   │       └─ application.properties
+│   │
+│   └─ test/
+│       └─ java/...                 
+│
+├─ .env                              
+├─ .gitignore
+├─ pom.xml                            
+└─ README.md
 
