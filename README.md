@@ -19,10 +19,8 @@ This is a Spring Boot-based personal portfolio showcasing my projects, skills, a
 
 ## 📊 Project Stats
 
-![GitHub repo size](https://img.shields.io/github/repo-size/sarvjeetkumar012/Portfolio)  
-![GitHub stars](https://img.shields.io/github/stars/sarvjeetkumar012/Portfolio?style=social)  
-![GitHub forks](https://img.shields.io/github/forks/sarvjeetkumar012/Portfolio?style=social)  
-![GitHub watchers](https://img.shields.io/github/watchers/sarvjeetkumar012/Portfolio?style=social)  
+![GitHub repo size](https://img.shields.io/github/repo-size/sarvjeetkumar012/Portfolio)    ![GitHub stars](https://img.shields.io/github/stars/sarvjeetkumar012/Portfolio?style=social)  
+![GitHub forks](https://img.shields.io/github/forks/sarvjeetkumar012/Portfolio?style=social)  ![GitHub watchers](https://img.shields.io/github/watchers/sarvjeetkumar012/Portfolio?style=social)  
 ![Website views](https://komarev.com/ghpvc/?username=sarvjeetkumar012&color=blue)  
 
 ---
@@ -38,4 +36,20 @@ This is a Spring Boot-based personal portfolio showcasing my projects, skills, a
 ---
 
 ## 📂 Project Structure
+portfolio/
+│
+├─ src/main/java/ → Java source code
+│ ├─ in/sarvjeetkumar/portfolio/
+│ │ ├─ controller/ → Spring MVC controllers
+│ │ └─ config/ → Configuration classes (Web3Form API keys)
+│
+├─ src/main/resources/
+│ ├─ application.properties → App configuration
+│ └─ templates/ → Thymeleaf HTML templates
+│
+├─ .env → Environment variables (ignored in Git)
+├─ pom.xml → Maven dependencies
+└─ README.md → Project documentation
+
+
 
